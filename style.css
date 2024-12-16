@@ -1,0 +1,174 @@
+/* Body background */
+body {
+    margin: 0;
+     padding: 0;
+       height: 100vh;
+            background: 
+   
+            linear-gradient(to bottom, #87ceeb , #f0f8ff);
+    /*sky-light background */
+        
+    display: flex;
+     flex-direction: column;
+      justify-content: center;
+       align-items: center;
+        font-family: "Arial",
+         sans-serif;
+                text-align: center;
+
+}
+
+    /* Stem */
+    .stem {
+        position : absolute;
+        bottom : 0;
+        left : 50%;
+        width : 15px;
+        height : 200px;
+        background : green;
+        border-radius : 5px;
+        animation : grow-stem 2.5s ease forwards;
+        } 
+
+    .leaf-left {
+        left: 10%;
+         bottom: 100px;
+          transform: rotate(-45deg);
+
+    }
+
+    .leaf-right {
+        right: 10%;
+         bottom: 100px;
+          transform: rotate(45deg);
+
+    }
+
+    /* Petals */
+    .petals {
+        position: absolute;
+         bottom: 200px;
+          left: 50%;
+          transform: translateX(-50%);
+         opacity: 0;
+        animation: Blooms petals 2s ease forwards 1.5s;
+
+    }
+
+    .petal {
+        position: absolute;
+         width: 80px;
+          height: 150px;
+           background: #ffdb58;
+           /* Yellow colour for sunflower petals */
+                border-radius: 50%;
+
+    }
+
+    /* Arrange petals around the centre */
+
+    .petal1 {
+        transform: rotate(0drg)
+         translateY(-80px);     
+    }
+
+    .petal2 {
+        transform: rotate(30deg)
+         translateY(-80px);
+    }
+
+    .petal3 {
+        transform: rotate(60deg)
+        translateY(-80px);
+    }
+
+    .petal4 {
+        transform: rotate(900deg)
+         translateY(-80px);
+    }
+
+    .petal5 {
+        transform: rotate(120deg)
+         translateY(-80px);
+    }
+
+    .petal6 {
+        transform: rotate(150px)
+         translateY(-80px);
+    }
+
+    .petal7 {
+        transform: rotate(180deg)
+         translateY(-80px);
+    }
+
+    .petal8 {
+        transform: rotate(210deg)
+         translateY(-80px);
+    }
+
+    .petal9 {
+        transform: rotate(240deg)
+         translateY(-80px);
+    }
+
+    .petal10 {
+        transform: rotate(270deg)
+        translateY(-80px);
+    }
+
+    .petal11 {
+        transform: rotate(3000deg)
+        translateY(-80px);
+    }
+
+    .petal12 {
+        transform: rotate(330deg)
+        translateY(-80px);
+    }
+
+    /*  Centre of the flower */
+    .centre {
+        position: absolute;
+         top: 60px;
+          left: 50%;
+           width: 80px;
+            height: 80px;
+            background: #8b4513;
+           /* Brown centre */
+          border-radius: 50%;
+         transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    /* Animation */
+    @keyframes grow-stem {
+        from {
+        height : 0;
+    }
+        to {
+            height: 200px;
+        }
+    }    
+
+    @keyframes grow-leaf {
+        from {
+            opacity: 0;
+             transform: scale(0);
+    }
+        to {
+            opacity: 1;
+             transform: scale(1);
+        }
+    }
+
+    @keyframes bloom-petals {
+        from {
+            opacity: 0;
+             transform: scale(0.5);
+    }
+        to {
+            opacity: 1;
+             transform: scale(1);
+        }
+    }
